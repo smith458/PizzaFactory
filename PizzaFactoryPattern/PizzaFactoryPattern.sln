@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderTesting", "OrderTesting\OrderTesting.csproj", "{BA9910DD-8A9B-4BC5-B988-BD260F094359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaMaker", "PizzaMaker\PizzaMaker.csproj", "{B2BAC467-3346-426D-8C98-C5BE61E74E61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA9910DD-8A9B-4BC5-B988-BD260F094359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA9910DD-8A9B-4BC5-B988-BD260F094359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA9910DD-8A9B-4BC5-B988-BD260F094359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA9910DD-8A9B-4BC5-B988-BD260F094359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2BAC467-3346-426D-8C98-C5BE61E74E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2BAC467-3346-426D-8C98-C5BE61E74E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2BAC467-3346-426D-8C98-C5BE61E74E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2BAC467-3346-426D-8C98-C5BE61E74E61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC425915-7865-4AC7-A2CB-E3FC3F3A4A29}
+	EndGlobalSection
+EndGlobal
