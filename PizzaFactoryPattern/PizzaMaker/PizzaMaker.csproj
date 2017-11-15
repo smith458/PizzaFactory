@@ -40,12 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NYCheesePizza.cs" />
-    <Compile Include="NYHawaiianPizza.cs" />
-    <Compile Include="NYPepperoniPizza.cs" />
-    <Compile Include="NYSausagePizza.cs" />
+    <Compile Include="ChiStylePizzas\ChiCheesePizza.cs" />
+    <Compile Include="ChiStylePizzas\ChiHawaiianPizza.cs" />
+    <Compile Include="ChiStylePizzas\ChiPepperoniPizza.cs" />
+    <Compile Include="ChiStylePizzas\ChiSausagePizza.cs" />
+    <Compile Include="ChiStylePizzas\ChiVeggiePizza.cs" />
+    <Compile Include="ChiStylePizzaFactory.cs" />
+    <Compile Include="NYStylePizzas\NYCheesePizza.cs" />
+    <Compile Include="NYStylePizzas\NYHawaiianPizza.cs" />
+    <Compile Include="NYStylePizzas\NYPepperoniPizza.cs" />
+    <Compile Include="NYStylePizzas\NYSausagePizza.cs" />
     <Compile Include="NYStylePizzaFactory.cs" />
-    <Compile Include="NYVeggiePizza.cs" />
+    <Compile Include="NYStylePizzas\NYVeggiePizza.cs" />
     <Compile Include="Pizza.cs" />
     <Compile Include="PizzaFactory.cs" />
     <Compile Include="PizzaStore.cs" />

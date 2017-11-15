@@ -13,7 +13,7 @@ namespace OrderTesting
         {
             PizzaStore store = new PizzaStore(new NYStylePizzaFactory());
 
-            store.OrderPizza(PizzaTypes.Cheese);
+            Pizza orderedPizza = store.OrderPizza(PizzaTypes.Cheese);
         }
     }
 }
