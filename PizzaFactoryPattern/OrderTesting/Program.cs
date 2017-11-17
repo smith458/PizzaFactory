@@ -11,7 +11,7 @@ namespace OrderTesting
     {
         static void Main(string[] args)
         {
-            PizzaStore store = new PizzaStore(new NYStylePizzaFactory());
+            PizzaStore store = new PizzaStore(new NYStylePizzaStore());
 
             Pizza orderedPizza = store.OrderPizza(PizzaTypes.Cheese);
         }

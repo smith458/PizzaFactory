@@ -6,18 +6,15 @@ using System.Threading.Tasks;
 
 namespace PizzaMaker
 {
-    public class PizzaStore
+    public abstract class PizzaStore
     {
-        public PizzaStore(PizzaFactory factory)
-        {
-            _factory = factory;
-        }
+        IngredientFactory _factory;
 
         public Pizza OrderPizza(PizzaTypes type)
         {
             Pizza pizza;
 
-            pizza = _factory.CreatePizza(type);
+            pizza = CreatePizza(type);
             pizza.Prepare();
             pizza.Bake();
             pizza.Cut();
@@ -27,6 +24,6 @@ namespace PizzaMaker
             return pizza;
         }
 
-        PizzaFactory _factory;
+        internal abstract Pizza CreatePizza(PizzaTypes type);
     }
 }

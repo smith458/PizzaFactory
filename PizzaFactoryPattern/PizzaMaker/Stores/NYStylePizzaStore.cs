@@ -1,32 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PizzaMaker.IngredientFactories;
 
 namespace PizzaMaker
 {
-    public class NYStylePizzaFactory : PizzaFactory
+    public class NYStylePizzaStore : PizzaStore
     {
-        public override Pizza CreatePizza(PizzaTypes type)
+        internal override Pizza CreatePizza(PizzaTypes type)
         {
             Pizza pizza;
+            IngredientFactory _factory = new NYIngredientFactory();
+
             switch (type)
             {
                 case PizzaTypes.Cheese:
-                    pizza = new NYCheesePizza();
+                    pizza = new CheesePizza(_factory);
+
                     break;
                 case PizzaTypes.Pepperoni:
-                    pizza = new NYPepperoniPizza();
+                    pizza = new PepperoniPizza(_factory);
                     break;
                 case PizzaTypes.Sausage:
-                    pizza = new NYSausagePizza();
+                    pizza = new SausagePizza(_factory);
                     break;
                 case PizzaTypes.Hawaiian:
-                    pizza = new NYHawaiianPizza();
+                    pizza = new HawaiianPizza(_factory);
                     break;
                 case PizzaTypes.Veggie:
-                    pizza = new NYVeggiePizza();
+                    pizza = new VeggiePizza(_factory);
                     break;
                 default:
                     pizza = null;

@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace PizzaMaker
 {
-    public class Pizza
+    public abstract class Pizza
     {
-        public void Prepare()
-        {
+        internal String name;
+        internal String dough;
+        internal String sauce;
+        internal String cheese;
+        internal List<String> toppings;
 
-        }
+
+        public abstract void Prepare();
 
         public void Bake()
         {
@@ -31,6 +35,11 @@ namespace PizzaMaker
         public void Deliver()
         {
             Console.WriteLine("The pizza is being delivered by car.");
+        }
+
+        public string GetName()
+        {
+            return name;
         }
     }
 }
